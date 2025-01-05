@@ -114,5 +114,24 @@
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.5.4"
+    {
+  "name": "evolution-api",
+  "version": "1.0.0",
+  "description": "API para integração de WhatsApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "prisma generate && prisma migrate deploy && node server.js"
+  },
+  "dependencies": {
+    "openssl": "^1.1.1",
+    "@prisma/client": "^4.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
   }
 }
