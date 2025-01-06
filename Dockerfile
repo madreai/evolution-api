@@ -9,6 +9,9 @@ LABEL contact="contato@atendai.com"
 
 WORKDIR /evolution
 
+# Adicionando variáveis de ambiente
+ENV AUTHENTICATION_API_KEY=DG386IAVInKheiRC2JLqWCiq1RQD6o8w
+
 COPY ./package.json ./tsconfig.json ./
 
 RUN npm install -f
